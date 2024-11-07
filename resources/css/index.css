@@ -1,1 +1,253 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "ubuntu-regular";
+  src: url("./fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "ubuntu-medium";
+  src: url("./fonts/Ubuntu-Medium.ttf");
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 100vw;
+}
+.title h1 {
+  width: 80%;
+}
+.title h2 {
+  width: 80%;
+}
+.title p {
+  color: black;
+  width: 80%;
+}
+.title span {
+  color: black;
+  width: 80%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "ubuntu-medium";
+  text-align: center;
+}
+
+h2 {
+  font-family: "ubuntu-regular";
+  text-align: center;
+}
+
+p {
+  font-family: "ubuntu-regular";
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+
+span {
+  font-family: "ubuntu-regular";
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+
+sl-tab-group {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+sl-tab-group:active {
+  color: black;
+}
+
+sl-tool-tip {
+  text-decoration: underline;
+}
+
+sl-tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+sl-carousel {
+  background-color: rgb(237, 229, 206);
+  height: 60%;
+}
+sl-carousel p {
+  color: black;
+}
+sl-carousel span {
+  color: black;
+}
+
+.dialog-scrolling {
+  color: white;
+  font-family: "ubuntu-regular";
+}
+
+.popup {
+  height: 50vh;
+  padding: 0;
+}
+.popup p {
+  text-align: left;
+}
+
+sl-button {
+  color: white;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+}
+.popup p {
+  color: white;
+  font-family: "ubuntu-regular";
+}
+
+.box {
+  border-color: white;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 5px;
+}
+
+.surface {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 191, 153);
+  background: linear-gradient(0deg, rgb(255, 191, 153) 15%, rgb(53, 179, 255) 100%);
+}
+
+.ocean {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 87%, rgb(1, 42, 91) 92%, rgb(9, 70, 107) 95%, rgb(1, 88, 113) 100%);
+  height: 634vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "ubuntu-regular";
+}
+.ocean .twilight {
+  top: 197vh;
+  width: 80%;
+}
+.ocean .giant {
+  top: 250vh;
+  width: 80%;
+}
+.ocean .giant li {
+  padding-bottom: 2vh;
+}
+.ocean .intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+  width: 80%;
+}
+.ocean .intro h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+.ocean .intro p {
+  margin: 5px;
+  font-size: 1em;
+}
+.ocean .intro span {
+  margin: 5px;
+  font-size: 1em;
+}
+.ocean .intro img {
+  width: 10%;
+  height: 10%;
+  color: white;
+}
+
+.seabed {
+  background: rgb(0, 0, 0);
+}
+
+.floor {
+  background: rgb(237, 229, 206);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.isopod {
+  width: 45vh;
+  height: 25vh;
+}
+
+#depth-meter {
+  position: sticky;
+  width: 100vw;
+  top: 90vh;
+  padding-bottom: 10px;
+  text-align: center;
+  align-self: flex-start;
+  border-bottom: 3px dashed hsl(0, 0%, 100%);
+  color: white;
+}
+
+.ocean-waves {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  left: 0;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}/*# sourceMappingURL=index.css.map */

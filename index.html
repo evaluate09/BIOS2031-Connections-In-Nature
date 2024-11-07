@@ -5,10 +5,179 @@
         <title>Bathynomus giganteus</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./resources/css">
+        <link rel="stylesheet" href="./resources/css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css" />
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace-autoloader.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./resources/js/index.js" async defer></script>
     </head>
-    <body>
-        
-        <script src="" async defer></script>
+    <body class="sl-theme-dark">
+        <div class="surface">
+            <div class="ocean-waves">
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+            <div class="title">
+                <h1>Bathynomus giganteus - Giant Isopod</h1>
+                <h2>Made by Eve Miles</h2>
+                <!-- Todo : who is this for, and why did I make this? -->
+                <p>Optimised for desktop and is for anyone with the ability to scroll down and read.</p>
+                <span>
+                    You can hover over
+                    <sl-tooltip content="You've hovered over me!"><u>underlined</u></sl-tooltip>
+                    text like this to see extra information or definitions!
+                </span>
+                <br>
+                <sl-dialog label="Author's Note" class="dialog-scrolling">
+                    <div class="popup">
+                      <p>
+                        I propose two questions.<br><br>
+                        Firstly, <b>have you ever had those dreams where you're sinking in an endless ocean?</b> <br><br>
+                        The prospect is unsurprisingly terrifying to a lot of people. It's an endless, unpredictable void. 
+                        I've always thought the deep dark was a place of comfort. 
+                        A book about the ocean was the first non-fiction book I can ever remember reading. 
+                        <br><br>
+                        I lost my interest in the ocean as I turned more towards the world of technology. I've finally made my way back.
+                        <br><br>
+                        My second question is this - <b>how do you provide information in a convenient and accessible way?</b>
+                        <br><br>
+                        There have been many resources that attempt to answer this question. Some might turn to TV shows, some books. 
+                        The reality is though, that <b>technology is inevitable</b>. Scrolling down and clicking a button is as widespread of a language as English is.
+                        <br><br>
+                        Technology is scary to learn because it's unfamiliar. But just like how we overcome our fears of the dark through knowledge, we come to learn about this unknown and realise it's not all that bad. 
+                        <br><br>
+                        This is both a tribute to both my younger self, fascinated by the ocean, and a showcase of how we can use technology to learn about science. 
+                      </p>
+                    </div>
+                    <sl-button slot="footer" variant="primary">Close</sl-button>
+                  </sl-dialog>
+                  <sl-button>Author's Note</sl-button>
+            </div>     
+        </div>
+        <div class="ocean">
+            <p id="depth-meter">0</p>
+            <div></div>
+            <div class="twilight">
+                <h1>The Mesopelagic / Twilight Zone</h1>
+                <p>Located between 200m - 1000m, less than 1% of sunlight reaches this zone. As a result, many organisms produce their own light, referred to as bioluminescence.</p>
+                <p>Temperatures vary from 4°C to 20°C.</p>
+                <p>The largest migration on Earth occurs every day from the twilight zone; many organisms living in this zone move up to the surface to feed at night, before returning back to the safer, darker depths as day comes around.</p>
+                <!-- Environmental conditiosn, temperature, oxyugen levels -->
+            </div>
+            <div class="giant">
+                <p>There's a common phenomenon as you get deeper into the ocean where deep-sea animals tend to be larger than their shallow-water relatives.</p>
+                <p>This is called "deep-sea gigantism" and is thought to be correlated with a number of factors, such as:</p>
+                <ul>
+                    <li><b>Surface area to volume ratios</b> -> larger animals have less surface area to volume, so they lose less body heat than those with smaller bodies, which may be relevant to the cooler temperatures of the twilight zone</li>
+                    <li><b>Food scarcity</b> -> a larger body size allows for greater mobility and ability to find food, as well as increased energy storage</li>
+                    <li>
+                        <span>
+                            <b>Dissolved oxygen levels</b> -> being larger allows organisms to absorb more oxygen, which is especially useful in 
+                            <sl-tooltip content="These zones are where oxygen concentration is the lowest in the ocean and are more formally called oxygen minimum zones. Usually occurs at around depths of 200 - 1500m."><u>oxygen deficient zones</u></sl-tooltip>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="intro">
+                <h2>One creature that exhibits deep-sea gigantism is known as <i>Bathynomus giganteus</i>, or the giant isopod.</h2>
+                <p>Its taxonomic classification is as follows.</p><br>
+                <div class="box">
+                    <h2>Kingdom Animalia (Animal Kingdom)</h2>
+                </div>
+                <img src="./resources/images/large-down-arrow.svg">
+                <div class="box">
+                    <h2>Phylum Arthropoda (Arthropods)</h2>
+                    <p><b>General features:</b> exoskeleton, segmented bodies and jointed legs.</p>
+                </div>
+                <img src="./resources/images/large-down-arrow.svg">
+                <div class="box">
+                <h2>Subphylum Crustacea (Crustaceans)</h2>
+                <span>
+                    <b>General features:</b>
+                    <sl-tooltip content="Also called primary antenna. Refers to the foremost pair of small antennas on a crustacean."><u>antennule</u></sl-tooltip>
+                    & 
+                    <sl-tooltip content="Also called secondary antenna. Can be significantly reduced in size or absent altogether."><u>antenna</u>,</sl-tooltip>
+                    mandibles, 
+                    <sl-tooltip content="Paired structure used for tasting and feeding. The maxillule is the first mouthpart immediately behind the mandibles."><u>maxillule</u></sl-tooltip>
+                    &
+                    <sl-tooltip content="Paired structure used for feeding and respiration. The maxilla is an appendange behind the maxillule."><u>maxilla</u></sl-tooltip>
+                    and
+                    <sl-tooltip content="Also known as the cephalic shield. The dorsal (back) part of the exoskeleton in crustacea. Generally protects the head and thorax. Not all crustaceans have carapaces."><u>carapaces </u></sl-tooltip>
+                </span>
+                </div>
+                <img src="./resources/images/large-down-arrow.svg">
+                <div class="box">
+                <h2>Class Malacostraca</h2>
+                <span><b>General features:</b> 
+                    5-segmented head with 
+                    <sl-tooltip content="Not all crustaceans have compound eyes. These are made up of thousands of ommatidia, which are hexagonal cells capable of distinguishing brightness and colour. The surface of an individual omatidia is called a facet. This is also the eye type found in many insects, such as flies."><u>compound eyes</u>,</sl-tooltip>
+                    8-segmented 
+                    <sl-tooltip content="The thorax of a crustacean. Attached to the pereon are maxillipeds and pereopods. Maxillipeds are appendages modified to assist with bringing food to the mouth. Pereopods are primarily used for walking, although can be used for gathering food."><u>pereon</u>,</sl-tooltip>
+                    6-segmented 
+                    <sl-tooltip content="The abdomen of a crustacean. Attached to the pereon are pleopods, which are generally used as swimming legs, although can also brood eggs, catch food and sometimes bear gills."><u>pleon</u>,</sl-tooltip>
+                    <sl-tooltip content="The telson (middle segment of the tail) combines with a pair of uropods (side segment of the tail) to make a tail fan at the end of the pleon. Used for steering and swimming."><u>telson</u></sl-tooltip>
+                </span>
+                </div>
+                <img src="./resources/images/large-down-arrow.svg">
+                <div class="box">
+                <h2>Order Isopoda (Isopods)</h2>
+                <p><b>General features:</b> 2 pairs of antennae, 4 sets of jaws, compound eyes and a 7 segmented-pereon, with each segment having its own pair of jointed limbs (i.e., 7 pairs of legs)</p>
+                </div>
+                <img src="./resources/images/large-down-arrow.svg">
+                <div class="box">
+                <h2>Family Cirolanidae</h2>
+                <p><b>General features:</b> aquatic, uses their pleopods as gills for gas exchange</p>
+                </div>
+                <img src="./resources/images/large-down-arrow.svg">
+                <div class="box">
+                <h2>Species <i>Bathynomus giganteus</i> (giant isopod)</h2>
+                </div>
+                <img src="./resources/images/large-down-arrow.svg">
+            </div>
+        </div>
+        <div class="floor mouse-dragging">
+            <img class="seabed" src="./resources/images/ocean-bottom.svg">
+            <img class="isopod" src="./resources/images/giant_isopod.png">
+            <sl-carousel loop navigation pagination>
+                <sl-carousel-item>
+                    <h2>Location</h2>
+                    <p>Most giant isopod species are found at depths of 365m - 730m, although the known lowest depth it was found was at ~2140m. </p>
+                    <p>These species are typically found in the colder waters of the Atlantic, Indian and Pacific ocean.</p>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <h2>Morphology</h2>
+                    <p>Like many arthropods, giant isopods feature a calcium carbonate exoskeleton made of overlapping segments, designed to protect it from predators. They also curl up when threatened.</p>
+                    <p>Typically they are 19-36cm long, although the longest confirmed length is ~50cm. They are usually pink or pale lilac in colour.</p>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <h2>Morphology</h2>
+                    <p>Their antenna are mainly used for sensing motion - particularly useful for completely dark environments such as the twilight zone.</p>
+                    <p>Their eyes are spaced out, large, triangular and compound with over 4000 individual facets. However, the extent to which they use their eyes is unclear since there is very little light in the twilight zone.</p>
+                    <!-- <p>Their pleonites, as can be seen on the side of their body</p> -->
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <h2>Feeding</h2>
+                    <span>
+                        Giant isopods are scavengers and predators; food is scarce in the 
+                        <sl-tooltip content="To do with the floor of a water body, usually the seafloor."><u>benthic</u></sl-tooltip>
+                        regions of the twilight zone so this creature will take any opportunity it can to feed.
+                    </span>
+                    <p>They have been known to gorge on food to the point that they are unable to move and are capable of surviving 5 years in captivity without food. This is supported by substantial fat reserves in their midgut glands, which works as storage for when they cannot find food and eat.</p>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <h2>Feeding</h2>
+                    <p>Their diets include dead whales, fish and squid - animals that have died in the surface layer and floated down to the seafloor in the twilight zone.</p>
+                    <p>They can also feed on live shrimps and squat lobsters; slow moving animals present at the seafloor.</p>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                    <h2>Reproduction</h2>
+                    <p>Giant isopods reproduce seasonally via egg laying, generally during spring and winter when food is more abundant. Mature females develop a pouch where 20-30 eggs are stored until the young (Manca) are ready to emerge These eggs are approximately 1.2cm in diameter.</p>
+                    <p>Manca come out fully developed and are distinguished through their lacking of the last pair of pereopods. They can also reach up to 6cm in length. These younger isopods shed their exoskeletons often to grow, after which malting either reduces greatly or stops altogether.</p>
+                </sl-carousel-item>
+            </sl-carousel>
+            <br>
+        </div>
+        <!-- Have 3 divs, the title, the ocean and the bottom -->
     </body>
 </html>
