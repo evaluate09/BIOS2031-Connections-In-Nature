@@ -102,7 +102,8 @@ sl-carousel span {
 }
 
 sl-button {
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .info {

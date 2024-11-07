@@ -29,6 +29,10 @@
                     You can hover over
                     <sl-tooltip content="You've hovered over me!"><u>underlined</u></sl-tooltip>
                     text like this to see extra information or definitions!
+                    <br><br>
+                    Square brackets with numbers in them (e.g. 
+                    <sl-tooltip content="This is a reference!"><u>[1]</u></sl-tooltip>
+                    ) is a reference.
                 </span>
                 <br>
                 <sl-dialog label="Author's Note" class="dialog-scrolling">
@@ -62,7 +66,10 @@
             <div></div>
             <div class="twilight">
                 <h1>The Mesopelagic / Twilight Zone</h1>
-                <p>Located between 200m - 1000m, less than 1% of sunlight reaches this zone. As a result, many organisms produce their own light, referred to as bioluminescence.</p>
+                <p>
+                    Located between 200m - 1000m, less than 1% of sunlight reaches this zone. As a result, many organisms produce their own light, referred to as bioluminescence.
+                    <sl-tooltip content="Reference: Talley, L. D., Emery, W. J., & Pickard, G. L. (2012). Descriptive physical oceanography: An introduction (6th ed). Academic Press."><u>[1]</u></sl-tooltip>
+                </p>
                 <p>Temperatures vary from 4°C to 20°C.</p>
                 <p>The largest migration on Earth occurs every day from the twilight zone; many organisms living in this zone move up to the surface to feed at night, before returning back to the safer, darker depths as day comes around.</p>
                 <!-- Environmental conditiosn, temperature, oxyugen levels -->
@@ -71,12 +78,19 @@
                 <p>There's a common phenomenon as you get deeper into the ocean where deep-sea animals tend to be larger than their shallow-water relatives.</p>
                 <p>This is called "deep-sea gigantism" and is thought to be correlated with a number of factors, such as:</p>
                 <ul>
-                    <li><b>Surface area to volume ratios</b> -> larger animals have less surface area to volume, so they lose less body heat than those with smaller bodies, which may be relevant to the cooler temperatures of the twilight zone</li>
-                    <li><b>Food scarcity</b> -> a larger body size allows for greater mobility and ability to find food, as well as increased energy storage</li>
+                    <li>
+                        <b>Surface area to volume ratios</b> -> larger animals have less surface area to volume, so they lose less body heat than those with smaller bodies, which may be relevant to the cooler temperatures of the twilight zone
+                        <sl-tooltip content="Reference: Timofeev, S. F. (2001). Bergmann's Principle and Deep-Water Gigantism in Marine Crustaceans. Biology Bulletin of the Russian Academy of Sciences, 28(6), 646-650. https://doi.org/10.1023/A:1012336823275"><u>[2]</u></sl-tooltip>
+                    </li>
+                    <li>
+                        <b>Food scarcity</b> -> a larger body size allows for greater mobility and ability to find food, as well as increased energy storage
+                        <sl-tooltip content="Reference: Gad, G. (2005). Giant Higgins-larvae with paedogenetic reproduction from the deep sea of the Angola Basin - evidence for a new life cycle and for abyssal gigantism in Loricifera? Organisms Diversity & Evolution, 5, 59-75. https://doi.org/10.1016/j.ode.2004.10.005"><u>[3]</u></sl-tooltip>
+                    </li>
                     <li>
                         <span>
                             <b>Dissolved oxygen levels</b> -> being larger allows organisms to absorb more oxygen, which is especially useful in 
                             <sl-tooltip content="These zones are where oxygen concentration is the lowest in the ocean and are more formally called oxygen minimum zones. Usually occurs at around depths of 200 - 1500m."><u>oxygen deficient zones</u></sl-tooltip>
+                            <sl-tooltip content="Reference: Chapelle, G., & Peck, L. S. (1999). Polar gigantism dictated by oxygen availability. Nature, 399(6732), 114-115. https://doi.org/10.1038/20099"><u>[4]</u></sl-tooltip>
                         </span>
                     </li>
                 </ul>
@@ -177,8 +191,19 @@
                     <p>Giant isopods reproduce seasonally via egg laying, generally during spring and winter when food is more abundant. Mature females develop a pouch where 20-30 eggs are stored until the young (Manca) are ready to emerge These eggs are approximately 1.2cm in diameter.</p>
                     <p>Manca come out fully developed and are distinguished through their lacking of the last pair of pereopods. They can also reach up to 6cm in length. These younger isopods shed their exoskeletons often to grow, after which malting either reduces greatly or stops altogether.</p>
                 </sl-carousel-item>
+                <sl-carousel-item>
+                    <h2>References</h2>
+                    <p style="font-size: 0.8em;">
+                        Giant Isopod—Images | Blue Planet Archive. (n.d.). Retrieved November 6, 2024, from https://pictures.blueplanetarchive.com/gallery/Giant-Isopod/G0000hZ47gM7wEzA/C00004p6ApO9K7u0
+                        <br><br>
+                        McCarthy |, E. (2014, April 18). 17 Awesome Facts About Giant Isopods. Mental Floss. https://www.mentalfloss.com/article/56278/www.mentalfloss.com/article/56278/18-awesome-facts-about-giant-isopods
+                        <br><br>
+                        Timofeev, S. F. (2001). Bergmann's Principle and Deep-Water Gigantism in Marine Crustaceans. Biology Bulletin of the Russian Academy of Sciences, 28(6), 646-650. https://doi.org/10.1023/A:1012336823275
+                        <br><br>
+                        WoRMS - World Register of Marine Species—Bathynomus giganteus A. Milne-Edwards, 1879. (n.d.). Retrieved November 6, 2024, from https://www.marinespecies.org/aphia.php?p=taxdetails&id=259252
+                    </p>
+                </sl-carousel-item>
             </sl-carousel>
-            <br>
         </div>
         <!-- Have 3 divs, the title, the ocean and the bottom -->
     </body>
